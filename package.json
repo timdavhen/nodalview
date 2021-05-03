@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "name": "nodalview",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timdavhen/nodalview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timdavhen/nodalview/issues"
+  },
+  "homepage": "https://github.com/timdavhen/nodalview#readme"
+}
