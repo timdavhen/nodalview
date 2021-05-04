@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'SabonCyr-Roman';
+  src: url('../fonts/SabonCyr-Roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SabonCyr-Bold';
+  src: url('../fonts/SabonCyr-Bold.ttf') format('truetype');
+}
+
 $greyish: #515151;
 $tealish: #008080;
 $reddish: #DA5A5A;
@@ -13,18 +25,22 @@ $whitish : #FFFFFF;
   .register {
     color: $whitish;
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: center;
     margin: 0 auto;
-    align-self: center;
+    font-family: 'SabonCyr-Roman';
+    letter-spacing: 0.05rem;
 
     h3 {
-      margin-bottom: 0;
+      align-self: center;
       padding-right: 25px;
+      font-size: 24px;
+      margin-bottom: 0;
     }
 
     .btn {
       background-color: $whitish;
+      padding: 15px;
     }
 
     .btn:hover {
@@ -45,9 +61,18 @@ $whitish : #FFFFFF;
     border-radius: 5px;
   }
 
-  h2, h3, p {
+  h2, h3 {
+    font-family: 'SabonCyr-Bold';
     color: $greyish;
     margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   .preview-container {
@@ -83,10 +108,17 @@ $whitish : #FFFFFF;
 
 .extensive-information {
 
+  p {
+    margin-bottom: 0;
+  }
+
   .extensive-text {
     margin: 100px auto;
     width: 40%;
     text-align: center;
+    font-family: 'SabonCyr-Roman';
+    letter-spacing: 0.05rem;
+    line-height: 1.6;
   }
 
   img {
@@ -99,7 +131,7 @@ $whitish : #FFFFFF;
 }
 
 .real-estate-container {
-  margin: 100px auto;
+  margin: 100px auto 50px auto;
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -110,8 +142,15 @@ $whitish : #FFFFFF;
   }
 
   .real-estate-profile {
+    font-family: 'SabonCyr-Roman';
+    letter-spacing: 0.05rem;
     color: $greyish;
     width: 500px;
+
+    p {
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
   }
 }
 
@@ -121,7 +160,7 @@ hr {
 }
 
 .real-estate-agency {
-  margin: 0 auto 100px auto;
+  margin: 50px auto;
   display: flex;
   justify-content: space-around;
   width: 70%;
@@ -130,11 +169,18 @@ hr {
     color: $greyish;
     margin-bottom: 25px;
     padding: 50px;
+    font-family: 'SabonCyr-Bold';
+    letter-spacing: 0.05rem;
+    font-size: 32px;
   }
 
   p {
+    font-family: 'SabonCyr-Roman';
+    letter-spacing: 0.05rem;
+    font-size: 20px;
     color: $greyish;
     padding: 0 50px 50px 50px;
+    margin-bottom: 0;
   }
 
   .real-estate-services {
@@ -146,6 +192,8 @@ hr {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
     .service {
+      font-family: 'SabonCyr-Roman';
+      letter-spacing: 0.05rem;
       font-size: 20px;
       color: $greyish;
     }
@@ -158,6 +206,16 @@ hr {
   .real-estate-about {
     margin-top: 50px;
     width: 500px;
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .headline {
+      color: $reddish;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -242,7 +300,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 }
 
 input {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 0.875em;
   width: 470px;
   height: 50px;
@@ -263,7 +321,7 @@ input {
 
 input:hover {
   background: $tealish;
-  color: $greyish;
+  color: $whitish;
 }
 
 textarea {
@@ -277,7 +335,7 @@ textarea {
   outline: none;
 
   color: $greyish;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 0.875em;
 
   border: solid 1px $tealish;
@@ -297,9 +355,9 @@ textarea:hover {
   width: 470px;
 
   padding: 0;
-  margin: -5px 0px 0px 0px;
+  margin: -6px 0px 0px 0px;
 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 0.875em;
   color: $tealish;
 
@@ -318,7 +376,7 @@ textarea:hover {
 
 
 
-.header {
+.navbar-container {
   width: 100%;
   text-align: right;
   position: relative;
@@ -328,18 +386,21 @@ textarea:hover {
     top: 0;
     left: 0;
     font-size: 32px;
-    padding: 24px;
+    padding: 25px;
     border-right: 3px solid $reddish;
     color: $greyish;
+    font-family: 'Josefin Sans', sans-serif;
   }
 }
 
-.link {
+.tabs {
   display: inline-block;
   padding: 15px 0;
   margin: 15px 25px;
   position: relative;
   text-decoration: none;
+  font-family: "SabonCyr-Bold";
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   color: $greyish;
   font-size: 24px;
