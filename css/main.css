@@ -51,7 +51,7 @@
     font-size: 24px; }
   .main-info-container .preview-container {
     width: 70%;
-    height: 400px;
+    height: 300px;
     margin: 50px auto;
     display: flex;
     justify-content: space-around;
@@ -64,7 +64,7 @@
 
 .pictures-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 100px auto; }
   .pictures-container img {
     display: block;
@@ -110,7 +110,7 @@
 
 hr {
   border-color: #515151;
-  width: 80%; }
+  width: 85%; }
 
 .real-estate-agency {
   margin: 50px auto;
@@ -119,8 +119,8 @@ hr {
   width: 70%; }
   .real-estate-agency h3 {
     color: #515151;
-    margin-bottom: 25px;
-    padding: 50px;
+    margin-bottom: 0;
+    padding: 25px 50px 50px 50px;
     font-family: 'SabonCyr-Bold';
     letter-spacing: 0.05rem;
     font-size: 32px; }
@@ -138,19 +138,34 @@ hr {
     flex-direction: column;
     width: 400px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; }
+    .real-estate-agency .real-estate-services hr {
+      margin: 0 auto;
+      width: 80%; }
     .real-estate-agency .real-estate-services .service {
       font-family: 'SabonCyr-Roman';
       letter-spacing: 0.05rem;
       font-size: 20px;
-      color: #515151; }
+      color: #515151;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      .real-estate-agency .real-estate-services .service p {
+        padding: 0; }
     .real-estate-agency .real-estate-services .fas {
-      padding: 0 50px 50px 50px; }
+      padding: 50px 0; }
   .real-estate-agency .real-estate-about {
     margin-top: 50px;
     width: 500px; }
     .real-estate-agency .real-estate-about p {
       font-size: 16px;
       line-height: 1.6; }
+    .real-estate-agency .real-estate-about .bar {
+      width: 10%;
+      display: inline-block;
+      border-bottom: 5px solid #DA5A5A;
+      position: relative;
+      bottom: 50px;
+      left: 50px; }
     .real-estate-agency .real-estate-about .headline {
       color: #DA5A5A;
       padding-bottom: 0; }
