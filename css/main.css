@@ -8,7 +8,7 @@
   .main-info-container img {
     display: block;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     width: 90%;
     border-radius: 5px; }
   .main-info-container h2, .main-info-container h3 {
@@ -25,3 +25,14 @@
       display: flex;
       justify-content: space-around;
       flex-direction: column; }
+
+.pictures-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto; }
+  .pictures-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 533px;
+    border-radius: 5px; }
