@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="/css/lightbox.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -44,7 +45,7 @@
       </div>
 
       <div class="main-info-container">
-        <img src="/images/house.jpg" alt="house">
+        <a href="/images/house.jpg" data-lightbox="house" data-title="House overview"><img src="/images/house.jpg" alt="house"></a>
         <h2>Wonderful house in Uccle</h2>
         <div class="preview-container">
           <div class="preview-address">
@@ -61,22 +62,22 @@
       </div>
 
       <div class="pictures-container">
-        <img src="/images/bathroom.jpg" alt="bathroom">
-        <img src="/images/kitchen.jpg" alt="kitchen">
-        <img src="/images/living-room.jpg" alt="living-room">
+        <a href="/images/bathroom.jpg" data-lightbox="house" data-title="Bathroom"><img src="/images/bathroom.jpg" alt="bathroom"></a>
+        <a href="/images/kitchen.jpg" data-lightbox="house" data-title="Kitchen"><img src="/images/kitchen.jpg" alt="kitchen"></a>
+        <a href="/images/living-room.jpg" data-lightbox="house" data-title="Living-room"><img src="/images/living-room.jpg" alt="living-room"></a>
       </div>
 
       <div class="extensive-information">
         <div class="extensive-text">
           <p>In the heart of Uccle, in an absolute calm and an idyllic green place,
-          3 min walk from the Bois de la Cambre, an exceptional house of the 1900
+          3-min walk from the Bois de la Cambre, an exceptional house of the 1900
           preserved by a high quality renovation - At the first level of a bright
           living room with fireplace opening onto a garden of +/- 180m² facing
           South - Fully equipped American kitchen - Upstairs 2 large bedrooms
           including the Master suite (20m² & 17m²) and bathroom. On the lower
           level an office or workshop space - Laundry room and Wine cellar.</p>
         </div>
-        <img src="/images/bedroom.jpg" alt="bedroom">
+        <a href="/images/bedroom.jpg" data-lightbox="house" data-title="Bedroom"><img src="/images/bedroom.jpg" alt="bedroom"></a>
       </div>
 
       <hr>
@@ -124,15 +125,28 @@
 
       <div class="real-estate-agency">
         <div class="real-estate-services">
-          <h3>Our Services</h3>
-          <div class="service"><i class="fas fa-map-signs" style="font-size:48px;color:#DA5A5A;"></i>Sale</div>
-          <div class="service"><i class="fas fa-key" style="font-size:48px;color:#DA5A5A;"></i>Rental</div>
-          <div class="service"><i class="fas fa-user" style="font-size:48px;color:#DA5A5A;"></i>Expertise</div>
-          <div class="service"><i class="fas fa-search" style="font-size:48px;color:#DA5A5A;"></i>Research</div>
+          <h3>Our services</h3>
+          <div class="service">
+            <i class="fas fa-map-signs" style="font-size:48px;color:#DA5A5A;"></i>
+            <p>Sale</p>
+          </div>
+          <hr>
+            <div class="service"><i class="fas fa-key" style="font-size:48px;color:#DA5A5A;"></i>
+            <p>Rental</p>
+          </div>
+          <hr>
+            <div class="service"><i class="fas fa-user" style="font-size:48px;color:#DA5A5A;"></i>
+            <p>Expertise</p>
+          </div>
+          <hr>
+          <div class="service"><i class="fas fa-search" style="font-size:48px;color:#DA5A5A;"></i>
+          <p>Research</p>
+          </div>
         </div>
 
         <div class="real-estate-about">
-          <h3>Why Brussels Real Estate?</h3>
+          <h3>Why choose us?</h3>
+          <div class="bar"></div>
           <p class="headline">Each story is different. We’re passionate about human connections.
             <br>
             Our goal? Your satisfaction.</p>
@@ -148,8 +162,9 @@
       </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="/js/lightbox.js"></script>
   </body>
 </html>
