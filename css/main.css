@@ -2,3 +2,26 @@
   height: 100px;
   background-color: #EA5554;
   margin-bottom: 50px; }
+
+.main-info-container {
+  text-align: center; }
+  .main-info-container img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 90%;
+    border-radius: 5px; }
+  .main-info-container h2, .main-info-container h3 {
+    color: #515151; }
+  .main-info-container .preview-container {
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px; }
+    .main-info-container .preview-container .preview-address, .main-info-container .preview-container .preview-price {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column; }
