@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: 'SabonCyr-Roman';
+  src: url("../fonts/SabonCyr-Roman.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'SabonCyr-Bold';
+  src: url("../fonts/SabonCyr-Bold.ttf") format("truetype"); }
+
 .banner-container {
   height: 100px;
   background-color: #DA5A5A;
@@ -7,15 +16,19 @@
   .banner-container .register {
     color: #FFFFFF;
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: center;
     margin: 0 auto;
-    align-self: center; }
+    font-family: 'SabonCyr-Roman';
+    letter-spacing: 0.05rem; }
     .banner-container .register h3 {
-      margin-bottom: 0;
-      padding-right: 25px; }
+      align-self: center;
+      padding-right: 25px;
+      font-size: 24px;
+      margin-bottom: 0; }
     .banner-container .register .btn {
-      background-color: #FFFFFF; }
+      background-color: #FFFFFF;
+      padding: 15px; }
     .banner-container .register .btn:hover {
       background-color: #DA5A5A;
       border-color: #FFFFFF; }
@@ -28,9 +41,14 @@
     margin-bottom: 100px;
     width: 90%;
     border-radius: 5px; }
-  .main-info-container h2, .main-info-container h3, .main-info-container p {
+  .main-info-container h2, .main-info-container h3 {
+    font-family: 'SabonCyr-Bold';
     color: #515151;
     margin-bottom: 0; }
+  .main-info-container h2 {
+    font-size: 40px; }
+  .main-info-container h3 {
+    font-size: 24px; }
   .main-info-container .preview-container {
     width: 70%;
     height: 400px;
@@ -55,10 +73,16 @@
     max-height: 533px;
     border-radius: 5px; }
 
+.extensive-information p {
+  margin-bottom: 0; }
+
 .extensive-information .extensive-text {
   margin: 100px auto;
   width: 40%;
-  text-align: center; }
+  text-align: center;
+  font-family: 'SabonCyr-Roman';
+  letter-spacing: 0.05rem;
+  line-height: 1.6; }
 
 .extensive-information img {
   display: block;
@@ -68,7 +92,7 @@
   border-radius: 5px; }
 
 .real-estate-container {
-  margin: 100px auto;
+  margin: 100px auto 50px auto;
   display: flex;
   justify-content: space-around;
   width: 80%; }
@@ -76,25 +100,37 @@
     width: 500px;
     border-radius: 5px; }
   .real-estate-container .real-estate-profile {
+    font-family: 'SabonCyr-Roman';
+    letter-spacing: 0.05rem;
     color: #515151;
     width: 500px; }
+    .real-estate-container .real-estate-profile p {
+      margin-bottom: 0;
+      line-height: 1.6; }
 
 hr {
   border-color: #515151;
   width: 80%; }
 
 .real-estate-agency {
-  margin: 0 auto 100px auto;
+  margin: 50px auto;
   display: flex;
   justify-content: space-around;
   width: 70%; }
   .real-estate-agency h3 {
     color: #515151;
     margin-bottom: 25px;
-    padding: 50px; }
+    padding: 50px;
+    font-family: 'SabonCyr-Bold';
+    letter-spacing: 0.05rem;
+    font-size: 32px; }
   .real-estate-agency p {
+    font-family: 'SabonCyr-Roman';
+    letter-spacing: 0.05rem;
+    font-size: 20px;
     color: #515151;
-    padding: 0 50px 50px 50px; }
+    padding: 0 50px 50px 50px;
+    margin-bottom: 0; }
   .real-estate-agency .real-estate-services {
     border-radius: 5px;
     margin-top: 50px;
@@ -103,6 +139,8 @@ hr {
     width: 400px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; }
     .real-estate-agency .real-estate-services .service {
+      font-family: 'SabonCyr-Roman';
+      letter-spacing: 0.05rem;
       font-size: 20px;
       color: #515151; }
     .real-estate-agency .real-estate-services .fas {
@@ -110,6 +148,12 @@ hr {
   .real-estate-agency .real-estate-about {
     margin-top: 50px;
     width: 500px; }
+    .real-estate-agency .real-estate-about p {
+      font-size: 16px;
+      line-height: 1.6; }
+    .real-estate-agency .real-estate-about .headline {
+      color: #DA5A5A;
+      padding-bottom: 0; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #515151;
@@ -174,7 +218,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   margin: 50px auto 100px auto; }
 
 input {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 0.875em;
   width: 470px;
   height: 50px;
@@ -191,7 +235,7 @@ input {
 
 input:hover {
   background: #008080;
-  color: #515151; }
+  color: #FFFFFF; }
 
 textarea {
   width: 470px;
@@ -202,7 +246,7 @@ textarea {
   background: transparent;
   outline: none;
   color: #515151;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 0.875em;
   border: solid 1px #008080;
   transition: all 0.3s ease-in-out;
@@ -217,8 +261,8 @@ textarea:hover {
 #submit {
   width: 470px;
   padding: 0;
-  margin: -5px 0px 0px 0px;
-  font-family: 'Lato', sans-serif;
+  margin: -6px 0px 0px 0px;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 0.875em;
   color: #008080;
   outline: none;
@@ -229,29 +273,32 @@ textarea:hover {
 #submit:hover {
   color: #FFFFFF; }
 
-.header {
+.navbar-container {
   width: 100%;
   text-align: right;
   position: relative; }
-  .header .logo {
+  .navbar-container .logo {
     position: absolute;
     top: 0;
     left: 0;
     font-size: 32px;
-    padding: 24px;
+    padding: 25px;
     border-right: 3px solid #DA5A5A;
-    color: #515151; }
+    color: #515151;
+    font-family: 'Josefin Sans', sans-serif; }
 
-.link {
+.tabs {
   display: inline-block;
   padding: 15px 0;
   margin: 15px 25px;
   position: relative;
   text-decoration: none;
+  font-family: "SabonCyr-Bold";
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   color: #515151;
   font-size: 24px; }
-  .link .bar {
+  .tabs .bar {
     width: 100%;
     display: inline-block;
     border-bottom: 3px solid #DA5A5A;
@@ -260,9 +307,9 @@ textarea:hover {
     left: 0;
     opacity: 0;
     transition: all 300ms; }
-  .link:hover {
+  .tabs:hover {
     text-decoration: none;
     color: #515151; }
-    .link:hover .bar {
+    .tabs:hover .bar {
       opacity: 1;
       bottom: 5px; }
