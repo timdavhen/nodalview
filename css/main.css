@@ -1,7 +1,24 @@
 .banner-container {
   height: 100px;
-  background-color: #EA5554;
-  margin-bottom: 50px; }
+  background-color: #DA5A5A;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center; }
+  .banner-container .register {
+    color: #FFFFFF;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    align-self: center; }
+    .banner-container .register h3 {
+      margin-bottom: 0;
+      padding-right: 25px; }
+    .banner-container .register .btn {
+      background-color: #FFFFFF; }
+    .banner-container .register .btn:hover {
+      background-color: #DA5A5A;
+      border-color: #FFFFFF; }
 
 .main-info-container {
   text-align: center; }
@@ -51,7 +68,7 @@
   border-radius: 5px; }
 
 .real-estate-container {
-  margin: 50px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: space-around;
   width: 80%; }
@@ -60,6 +77,38 @@
     border-radius: 5px; }
   .real-estate-container .real-estate-profile {
     color: #515151;
+    width: 500px; }
+
+hr {
+  border-color: #515151;
+  width: 80%; }
+
+.real-estate-agency {
+  margin: 0 auto 100px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 70%; }
+  .real-estate-agency h3 {
+    color: #515151;
+    margin-bottom: 25px;
+    padding: 50px; }
+  .real-estate-agency p {
+    color: #515151;
+    padding: 0 50px 50px 50px; }
+  .real-estate-agency .real-estate-services {
+    border-radius: 5px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; }
+    .real-estate-agency .real-estate-services .service {
+      font-size: 20px;
+      color: #515151; }
+    .real-estate-agency .real-estate-services .fas {
+      padding: 0 50px 50px 50px; }
+  .real-estate-agency .real-estate-about {
+    margin-top: 50px;
     width: 500px; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -133,7 +182,7 @@ input {
   background: transparent;
   outline: none;
   color: #515151;
-  border: solid 1px teal;
+  border: solid 1px #008080;
   border-bottom: none;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -141,7 +190,7 @@ input {
   -ms-transition: all 0.3s ease-in-out; }
 
 input:hover {
-  background: teal;
+  background: #008080;
   color: #515151; }
 
 textarea {
@@ -155,14 +204,14 @@ textarea {
   color: #515151;
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  border: solid 1px teal;
+  border: solid 1px #008080;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out; }
 
 textarea:hover {
-  background: teal;
+  background: #008080;
   color: #FFFFFF; }
 
 #submit {
@@ -171,11 +220,49 @@ textarea:hover {
   margin: -5px 0px 0px 0px;
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  color: teal;
+  color: #008080;
   outline: none;
   cursor: pointer;
-  border: solid 1px teal;
+  border: solid 1px #008080;
   border-top: none; }
 
 #submit:hover {
   color: #FFFFFF; }
+
+.header {
+  width: 100%;
+  text-align: right;
+  position: relative; }
+  .header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    padding: 24px;
+    border-right: 3px solid #DA5A5A;
+    color: #515151; }
+
+.link {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 24px; }
+  .link .bar {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 3px solid #DA5A5A;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 300ms; }
+  .link:hover {
+    text-decoration: none;
+    color: #515151; }
+    .link:hover .bar {
+      opacity: 1;
+      bottom: 5px; }
