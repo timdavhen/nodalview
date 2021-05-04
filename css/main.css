@@ -11,8 +11,9 @@
     margin-bottom: 100px;
     width: 90%;
     border-radius: 5px; }
-  .main-info-container h2, .main-info-container h3 {
-    color: #515151; }
+  .main-info-container h2, .main-info-container h3, .main-info-container p {
+    color: #515151;
+    margin-bottom: 0; }
   .main-info-container .preview-container {
     width: 70%;
     height: 400px;
@@ -36,3 +37,15 @@
     max-width: 400px;
     max-height: 533px;
     border-radius: 5px; }
+
+.extensive-information .extensive-text {
+  margin: 100px auto;
+  width: 40%;
+  text-align: center; }
+
+.extensive-information img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 80%;
+  border-radius: 5px; }
