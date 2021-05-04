@@ -1,8 +1,11 @@
-$grey: #515151;
+$greyish: #515151;
+$tealish: teal;
+$reddish: #EA5554;
+$whitish : #FFFFFF;
 
 .banner-container {
   height: 100px;
-  background-color: #EA5554;
+  background-color: $reddish;
   margin-bottom: 50px;
 }
 
@@ -18,7 +21,7 @@ $grey: #515151;
   }
 
   h2, h3, p {
-    color: $grey;
+    color: $greyish;
     margin-bottom: 0;
   }
 
@@ -68,4 +71,174 @@ $grey: #515151;
     width: 80%;
     border-radius: 5px;
   }
+}
+
+.real-estate-container {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+
+  .agent-picture img {
+    width: 500px;
+    border-radius: 5px;
+  }
+
+  .real-estate-profile {
+    color: $greyish;
+    width: 500px;
+  }
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: $greyish;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: $greyish;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: $greyish;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: $greyish;
+}
+
+input::placeholder, textarea::placeholder {
+  color: $greyish;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: $greyish;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: $greyish;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: $greyish;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: $whitish;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: $whitish;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: $whitish;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: $whitish;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: $whitish;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: $whitish;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: $whitish;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: $whitish;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: $greyish;
+
+  border: solid 1px $tealish;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: $tealish;
+  color: $greyish;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: $greyish;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+
+  border: solid 1px $tealish;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: $tealish;
+  color: $whitish;
+}
+
+#submit {
+  width: 470px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: $tealish;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px $tealish;
+  border-top: none;
+}
+
+#submit:hover {
+  color: $whitish;
 }
