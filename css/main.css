@@ -7,6 +7,46 @@
   font-family: 'SabonCyr-Bold';
   src: url("../fonts/SabonCyr-Bold.ttf") format("truetype"); }
 
+.navbar-container {
+  width: 100%;
+  text-align: right;
+  position: relative; }
+  .navbar-container .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    padding: 25px;
+    border-right: 3px solid #DA5A5A;
+    color: #515151;
+    font-family: 'Josefin Sans', sans-serif; }
+  .navbar-container .tabs {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 25px;
+    position: relative;
+    text-decoration: none;
+    font-family: "SabonCyr-Bold";
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 24px; }
+    .navbar-container .tabs .bar {
+      width: 100%;
+      display: inline-block;
+      border-bottom: 3px solid #DA5A5A;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 300ms; }
+    .navbar-container .tabs:hover {
+      text-decoration: none;
+      color: #515151; }
+      .navbar-container .tabs:hover .bar {
+        opacity: 1;
+        bottom: 5px; }
+
 .banner-container {
   height: 100px;
   background-color: #DA5A5A;
@@ -14,24 +54,133 @@
   display: flex;
   align-items: center; }
   .banner-container .register {
-    color: #FFFFFF;
     display: flex;
     width: 80%;
     justify-content: center;
-    margin: 0 auto;
-    font-family: 'SabonCyr-Roman';
-    letter-spacing: 0.05rem; }
+    margin: 0 auto; }
     .banner-container .register h3 {
-      align-self: center;
-      padding-right: 25px;
-      font-size: 24px;
-      margin-bottom: 0; }
+      color: #FFFFFF;
+      align-self: center; }
     .banner-container .register .btn {
       background-color: #FFFFFF;
       padding: 15px; }
     .banner-container .register .btn:hover {
       background-color: #DA5A5A;
       border-color: #FFFFFF; }
+
+.contact-form #form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto; }
+  .contact-form #form #submit {
+    width: 470px;
+    padding: 0;
+    margin: -6px 0px 0px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.875em;
+    color: #008080;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #008080;
+    border-top: none; }
+  .contact-form #form #submit:hover {
+    color: #FFFFFF; }
+  .contact-form #form input {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #515151;
+    border: solid 1px #008080;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; }
+  .contact-form #form textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #515151;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.875em;
+    border: solid 1px #008080;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; }
+  .contact-form #form input::-webkit-input-placeholder, .contact-form #form textarea::-webkit-input-placeholder {
+    color: #515151;
+    font-size: 0.875em; }
+  .contact-form #form input:focus::-webkit-input-placeholder, .contact-form #form textarea:focus::-webkit-input-placeholder {
+    color: #515151; }
+  .contact-form #form input::-moz-placeholder, .contact-form #form textarea::-moz-placeholder {
+    color: #515151;
+    font-size: 0.875em; }
+  .contact-form #form input:focus::-moz-placeholder, .contact-form #form textarea:focus::-moz-placeholder {
+    color: #515151; }
+  .contact-form #form input::placeholder, .contact-form #form textarea::placeholder {
+    color: #515151;
+    font-size: 0.875em; }
+  .contact-form #form input:focus::placeholder, .contact-form #form textarea::focus:placeholder {
+    color: #515151; }
+  .contact-form #form input::-ms-placeholder, .contact-form #form textarea::-ms-placeholder {
+    color: #515151;
+    font-size: 0.875em; }
+  .contact-form #form input:focus::-ms-placeholder, .contact-form #form textarea:focus::-ms-placeholder {
+    color: #515151; }
+  .contact-form #form input:hover::-webkit-input-placeholder, .contact-form #form textarea:hover::-webkit-input-placeholder {
+    color: #FFFFFF;
+    font-size: 0.875em; }
+  .contact-form #form input:hover:focus::-webkit-input-placeholder, .contact-form #form textarea:hover:focus::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  .contact-form #form input:hover::-moz-placeholder, .contact-form #form textarea:hover::-moz-placeholder {
+    color: #FFFFFF;
+    font-size: 0.875em; }
+  .contact-form #form input:hover:focus::-moz-placeholder, .contact-form #form textarea:hover:focus::-moz-placeholder {
+    color: #FFFFFF; }
+  .contact-form #form input:hover::placeholder, .contact-form #form textarea:hover::placeholder {
+    color: #FFFFFF;
+    font-size: 0.875em; }
+  .contact-form #form input:hover:focus::placeholder, .contact-form #form textarea:hover:focus::placeholder {
+    color: #FFFFFF; }
+  .contact-form #form input:hover::placeholder, .contact-form #form textarea:hover::placeholder {
+    color: #FFFFFF;
+    font-size: 0.875em; }
+  .contact-form #form input:hover:focus::-ms-placeholder, .contact-form #form textarea:hover::focus:-ms-placeholder {
+    color: #FFFFFF; }
+  .contact-form #form input:hover {
+    background: #008080;
+    color: #FFFFFF; }
+  .contact-form #form textarea:hover {
+    background: #008080;
+    color: #FFFFFF; }
+
+p {
+  font-family: 'SabonCyr-Roman';
+  color: #515151;
+  margin-bottom: 0;
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+  line-height: 1.6; }
+
+h3 {
+  font-size: 24px;
+  font-family: 'SabonCyr-Bold';
+  color: #515151;
+  margin-bottom: 0;
+  letter-spacing: 0.05rem; }
+
+hr {
+  border-color: #515151;
+  width: 85%; }
 
 .main-info-container {
   text-align: center; }
@@ -41,14 +190,15 @@
     margin-bottom: 100px;
     width: 90%;
     border-radius: 5px; }
-  .main-info-container h2, .main-info-container h3 {
+  .main-info-container h2 {
     font-family: 'SabonCyr-Bold';
     color: #515151;
+    font-size: 40px;
     margin-bottom: 0; }
-  .main-info-container h2 {
-    font-size: 40px; }
-  .main-info-container h3 {
-    font-size: 24px; }
+  .main-info-container .bar {
+    width: 15%;
+    display: inline-block;
+    border-bottom: 5px solid #DA5A5A; }
   .main-info-container .preview-container {
     width: 70%;
     height: 300px;
@@ -73,16 +223,10 @@
     max-height: 533px;
     border-radius: 5px; }
 
-.extensive-information p {
-  margin-bottom: 0; }
-
 .extensive-information .extensive-text {
   margin: 100px auto;
   width: 40%;
-  text-align: center;
-  font-family: 'SabonCyr-Roman';
-  letter-spacing: 0.05rem;
-  line-height: 1.6; }
+  text-align: center; }
 
 .extensive-information img {
   display: block;
@@ -100,17 +244,7 @@
     width: 500px;
     border-radius: 5px; }
   .real-estate-container .real-estate-profile {
-    font-family: 'SabonCyr-Roman';
-    letter-spacing: 0.05rem;
-    color: #515151;
     width: 500px; }
-    .real-estate-container .real-estate-profile p {
-      margin-bottom: 0;
-      line-height: 1.6; }
-
-hr {
-  border-color: #515151;
-  width: 85%; }
 
 .real-estate-agency {
   margin: 50px auto;
@@ -118,19 +252,10 @@ hr {
   justify-content: space-around;
   width: 70%; }
   .real-estate-agency h3 {
-    color: #515151;
-    margin-bottom: 0;
     padding: 25px 50px 50px 50px;
-    font-family: 'SabonCyr-Bold';
-    letter-spacing: 0.05rem;
     font-size: 32px; }
   .real-estate-agency p {
-    font-family: 'SabonCyr-Roman';
-    letter-spacing: 0.05rem;
-    font-size: 20px;
-    color: #515151;
-    padding: 0 50px 50px 50px;
-    margin-bottom: 0; }
+    padding: 0 50px 50px 50px; }
   .real-estate-agency .real-estate-services {
     border-radius: 5px;
     margin-top: 50px;
@@ -142,23 +267,19 @@ hr {
       margin: 0 auto;
       width: 80%; }
     .real-estate-agency .real-estate-services .service {
-      font-family: 'SabonCyr-Roman';
-      letter-spacing: 0.05rem;
-      font-size: 20px;
-      color: #515151;
       display: flex;
       align-items: center;
       justify-content: space-evenly; }
       .real-estate-agency .real-estate-services .service p {
-        padding: 0; }
+        padding: 0;
+        font-size: 20px; }
     .real-estate-agency .real-estate-services .fas {
-      padding: 50px 0; }
+      padding: 50px 0;
+      font-size: 48px;
+      color: #DA5A5A; }
   .real-estate-agency .real-estate-about {
     margin-top: 50px;
     width: 500px; }
-    .real-estate-agency .real-estate-about p {
-      font-size: 16px;
-      line-height: 1.6; }
     .real-estate-agency .real-estate-about .bar {
       width: 10%;
       display: inline-block;
@@ -169,162 +290,3 @@ hr {
     .real-estate-agency .real-estate-about .headline {
       color: #DA5A5A;
       padding-bottom: 0; }
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #515151;
-  font-size: 0.875em; }
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #515151; }
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #515151;
-  font-size: 0.875em; }
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #515151; }
-
-input::placeholder, textarea::placeholder {
-  color: #515151;
-  font-size: 0.875em; }
-
-input:focus::placeholder, textarea::focus:placeholder {
-  color: #515151; }
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #515151;
-  font-size: 0.875em; }
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #515151; }
-
-/* on hover placeholder */
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  color: #FFFFFF;
-  font-size: 0.875em; }
-
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #FFFFFF; }
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: #FFFFFF;
-  font-size: 0.875em; }
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #FFFFFF; }
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #FFFFFF;
-  font-size: 0.875em; }
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #FFFFFF; }
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #FFFFFF;
-  font-size: 0.875em; }
-
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: #FFFFFF; }
-
-#form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto; }
-
-input {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.875em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  background: transparent;
-  outline: none;
-  color: #515151;
-  border: solid 1px #008080;
-  border-bottom: none;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out; }
-
-input:hover {
-  background: #008080;
-  color: #FFFFFF; }
-
-textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  background: transparent;
-  outline: none;
-  color: #515151;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.875em;
-  border: solid 1px #008080;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out; }
-
-textarea:hover {
-  background: #008080;
-  color: #FFFFFF; }
-
-#submit {
-  width: 470px;
-  padding: 0;
-  margin: -6px 0px 0px 0px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 0.875em;
-  color: #008080;
-  outline: none;
-  cursor: pointer;
-  border: solid 1px #008080;
-  border-top: none; }
-
-#submit:hover {
-  color: #FFFFFF; }
-
-.navbar-container {
-  width: 100%;
-  text-align: right;
-  position: relative; }
-  .navbar-container .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 32px;
-    padding: 25px;
-    border-right: 3px solid #DA5A5A;
-    color: #515151;
-    font-family: 'Josefin Sans', sans-serif; }
-
-.tabs {
-  display: inline-block;
-  padding: 15px 0;
-  margin: 15px 25px;
-  position: relative;
-  text-decoration: none;
-  font-family: "SabonCyr-Bold";
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  color: #515151;
-  font-size: 24px; }
-  .tabs .bar {
-    width: 100%;
-    display: inline-block;
-    border-bottom: 3px solid #DA5A5A;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 300ms; }
-  .tabs:hover {
-    text-decoration: none;
-    color: #515151; }
-    .tabs:hover .bar {
-      opacity: 1;
-      bottom: 5px; }

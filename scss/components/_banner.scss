@@ -1,0 +1,32 @@
+$reddish: #DA5A5A;
+$whitish : #FFFFFF;
+
+.banner-container {
+  height: 100px;
+  background-color: $reddish;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+
+  .register {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+
+    h3 {
+      color: $whitish;
+      align-self: center;
+    }
+
+    .btn {
+      background-color: $whitish;
+      padding: 15px;
+    }
+
+    .btn:hover {
+      background-color: $reddish;
+      border-color: $whitish;
+    }
+  }
+}
