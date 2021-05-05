@@ -2,20 +2,22 @@ $greyish: #515151;
 $reddish: #DA5A5A;
 
 .navbar-container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: right;
-  position: relative;
+  position: fixed;
+  top: 0;
+  background-color: #FFFFFF;
+  z-index: 1;
+  border-bottom: 1px solid $greyish;
 
-  .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 32px;
-    padding: 25px;
-    border-right: 3px solid $reddish;
-    color: $greyish;
-    font-family: 'Josefin Sans', sans-serif;
-  }
+  .logo img {
+      margin-left: 25px;
+      padding-bottom: 5px;
+      width: 100px;
+    }
 
   .tabs {
     display: inline-block;
@@ -23,8 +25,7 @@ $reddish: #DA5A5A;
     margin: 15px 25px;
     position: relative;
     text-decoration: none;
-    font-family: "SabonCyr-Bold";
-    letter-spacing: 0.05rem;
+    font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
     color: $greyish;
     font-size: 24px;
