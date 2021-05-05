@@ -1,0 +1,54 @@
+$greyish: #515151;
+$reddish: #DA5A5A;
+
+.navbar-container {
+  width: 100%;
+  text-align: right;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    padding: 25px;
+    border-right: 3px solid $reddish;
+    color: $greyish;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .tabs {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 25px;
+    position: relative;
+    text-decoration: none;
+    font-family: "SabonCyr-Bold";
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: $greyish;
+    font-size: 24px;
+
+    .bar {
+      width: 100%;
+      display: inline-block;
+      border-bottom: 3px solid $reddish;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 300ms;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $greyish;
+
+      .bar {
+        opacity: 1;
+        bottom: 5px;
+      }
+    }
+  }
+}
+
